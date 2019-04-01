@@ -133,11 +133,12 @@ body {
 
 .footer h4 {
   font-size: 2rem;
-}
+}*/
 
 .footer li {
+  display:inline-block;
   list-style: none;
   padding: .2em;
-}*/
+}
 
 /* footer styles ends here*/
