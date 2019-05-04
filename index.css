@@ -210,24 +210,69 @@ nav {
 
 /* footer styles starts here*/
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: #eeeeee;
-}
+      #subfoot ul
+          {
+            display: inline-block;
+           text-align: center;
+            list-style: none;
+           }
 
-.footer h4 {
-  margin: 12px 20px;
-}
+        #subfoot{
+            BAckground-color:#393e46;
+            min-height :12em;
+            display:flex;
+            color:white;
+            text-align:center;
+            padding:20px;
 
-.footer ul {
-  margin: 12px 20px;
-  list-style: none;
-}
-.footer-section {
-  background-color: #222831;
-  flex: 1;
-}
+        }
+
+        #subfoot ul li{
+            padding:8px;
+           padding-right:40px;
+            
+
+        }
+        #subfoot h2{
+            display:block;
+            
+            
+        }
+
+
+        #mainfoot{
+            background-color: #222831;
+            min-height: 10em;
+            margin:0;
+            padding:20px;
+            color:white;
+            
+        }
+        #mainfoot h2 {
+            display: inline-block;
+            padding: 10px 40px;
+        
+        }
+        #mainfloat{
+            float:right;
+            padding: 20px 30px;
+
+        }
+        #mainfoot p {
+            
+            padding: 10px 40px;
+        }
+
+        #mainfloat li{
+            padding:10px;
+            background-color: aliceblue;
+            border:1px solid wheat;
+            border-radius:1em;
+            font-size: 120%;
+            text-align: center;
+            color:black;
+            
+        }
 /* footer styles ends here*/
 /* Login.html styles */
 
