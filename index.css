@@ -229,24 +229,66 @@ nav {
   flex: 1;
 }
 /* footer styles ends here*/
-
-@media only screen and (min-width: 900px) {
-  .section {
-    width: 50vw;
-    height: 100vw;
-  }
-}
-
 /* Login.html styles */
 
 .login-wrapper {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
+.section {
+  width: 100vw;
+  height: 50vh;
+}
+.section h1 {
+  color: #eeeeee;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+input {
+  display: block;
+}
+
+form > * {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+button {
+  padding: 0.4em .6em;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  color: white;
+  font-size: 1.3rem;
+}
+button:hover {
+  color: #00adb5;
+  border-color: #00adb5;
+}
 .login-section {
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #393e46;
 }
 .info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #00adb5;
 }
+/*Media query for responsive*/
+@media only screen and (min-width: 900px) {
+  .login-wrapper {
+  flex-direction: row;
+}
+  .section {
+    width: 50vw;
+    height: 100vh;
+  }
+}
+
+
