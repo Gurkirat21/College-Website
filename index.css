@@ -368,3 +368,21 @@ header p {
 }
 
 /*About styles ends here*/
+
+.but {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  list-style: none;
+}
+
+.butt {
+  color: white;
+  font-weight: lighter;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: #00adb5;
+  text-decoration: none;
+  font-family: "Trebuchet MS", sans-serif;
+  border-radius: 8px;
+}

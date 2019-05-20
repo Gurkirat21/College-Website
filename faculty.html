@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="ECE Department of the SBSSTC " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faculity</title>
+    <!-- <link rel="stylesheet" href="index.css" type="text/css" /> -->
+
+    <style>
+
+
+        body{
+            margin:0;
+            padding:0;
+            background-color: #eeeeee;
+            font-family: "Trebuchet MS", sans-serif;
+    
+        }
+                
+            /* Header Modification*/
+        .topHeader {
+        background-color: #393e46;
+        }
+
+        /*.logo {
+        float: left;
+        padding-left: 1em;
+        width: 7em;
+        }*/
+
+        .topHeader ul {
+        float: right;
+        padding: 1em;
+        }
+        nav {
+        background-color: #222831;
+        overflow: hidden;
+        }
+        .nav li {
+        display: inline-block;
+        }
+
+        .nav a {
+        font-size: 1rem;
+        color: #eeeeee;
+        font-family: "Trebuchet MS";
+        font-weight: 600;
+        padding: 1em;
+        text-decoration: none;
+        }
+
+        .nav a:hover {
+        color: #00adb5;
+        text-decoration: none;
+        }
+
+        .topHeader h1 {
+        color: #eeeeee;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 2rem;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        font-weight: lighter;
+        }
+
+        /*Top header rules ends here*/
+
+        .grid{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:wrap;
+
+
+}
+
+.flex{
+/* position: relative; */
+
+
+min-height:100px;
+width: 100%;
+text-align: center;
+margin-bottom: 40px;
+
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width:80%;
+    background-color:white;
+    margin:0% 10%;
+    padding-bottom:10px ;
+
+}
+
+.button{
+    padding:8px;
+    text-decoration: none;
+    background-color:black;
+    color:white;
+}
+
+.button:hover{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+        /* footer styles starts here*/
+
+        #subfoot ul
+                {
+                    display: inline-block;
+                text-align: center;
+                    list-style: none;
+                    padding: 0;
+                }
+
+        #subfoot{
+            BAckground-color:#393e46;
+            min-height :12em;
+            display:flex;
+            color:white;
+            text-align:center;
+            padding:20px;
+
+        }
+
+
+        #subfoot ul li{
+            padding:8px;
+           
+            
+
+        }
+        #subfoot h2{
+            display:block;
+            padding-bottom: 20px;
+            
+            
+        }
+
+
+        #mainfoot{
+            background-color: #222831;
+            min-height: 10em;
+            margin:0;
+            padding:20px;
+            color:white;
+            overflow: hidden;
+            
+        }
+        #mainfoot h2 {
+            display: inline-block;
+            padding: 10px 40px;
+        
+        }
+        #mainfloat{
+            float:right;
+            padding: 20px 30px;
+            
+
+        }
+        #mainfoot p {
+            
+            padding: 10px 40px;
+        }
+
+        #mainfloat li{
+            padding:10px;
+            background-color: aliceblue;
+            border:1px solid wheat;
+            border-radius:1em;
+            font-size: 120%;
+            text-align: center;
+            color:black;
+            
+        }
+/* footer styles ends here*/
+
+
+/* media quaries starts from here */
+
+
+@media only screen and (min-width: 900px)
+{
+    .flex{
+        width:48%;
+    }
+}
+
+@media only screen and (min-width: 1200px ){
+
+    .flex{
+
+        width:33%;
+    }
+
+
+}
+    
+    </style>
+  </head>
+
+  <body>
+      
+        <header class="topHeader" id="header">
+                <nav>
+                  <!--We need a better logo but we will make do for right now-->
+                  <!---
+                  <img
+                    src="http://sbsstc.ac.in/IMGs/Sketch.png"
+                    alt="logo"
+                    class="logo"
+                  /> -->
+                  <ul class="nav" id="mainNav">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Gallery.html">Gallery</a></li>
+                        <li><a href="./login.html">Attendance</a></li>
+                        <li><a href="./Faculity_profiles.html">Facaulty</a></li>
+                        <li><a href="./about.html">About</a></li>
+                      </ul>
+                </nav>
+                <h1>Faculity Profiles</h1>
+              </header>
+
+<!-- ---------------header code  ends--------------- -->
+
+<div style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top:1em; padding-bottom:1em;">
+<div class="grid" >
+       
+        <div class="flex">
+                <div class="card">
+                    
+                        <img src="images/team1.jpg" alt="Jane" style="width:100%; " >
+                        <h2 class="namef">Rose</h2>
+                        <p class="title">HOD</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><a class="button" href="#profile">View Profile</a></p>
+    
+    
+                    </div>
+        </div> 
+
+        <div class="flex">
+                <div class="card">
+                    
+                        <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                        <h2 class="namef">Rose</h2>
+                        <p class="title">HOD</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><a class="button" href="#profile">View Profile</a></p>
+    
+    
+                    </div>
+        </div>
+
+        <div class="flex">
+                <div class="card">
+                    
+                        <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                        <h2 class="namef">Rose</h2>
+                        <p class="title">HOD</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><a class="button" href="#profile">View Profile</a></p>
+    
+    
+                    </div>
+        </div>
+
+        <div class="flex">
+                <div class="card">
+                    
+                        <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                        <h2 class="namef">Rose</h2>
+                        <p class="title">HOD</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><a class="button" href="#profile">View Profile</a></p>
+    
+    
+                    </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<!-- -----------------Footer code Start-------------- -->
+
+   <footer id="subfoot" align="center">
+        <div style="width:50%;">
+            <h2>Menu</h2>
+            <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>Attendance</li>
+            <li>Facaulty</li>
+            <li>About</li>
+            </ul>
+        </div>
+    
+        <div style="width:50%;">
+                <h2>Get Envolved</h2>
+            <ul>
+            <li>Registration</li>
+            <li>Log-in</li>
+            <li>History</li>
+            <li>Our Staff!</li>
+            <li>contact the developers of this site</li>
+            </ul>
+        </div>   
+    </footer>
+    
+    <footer id="mainfoot">
+        <h2>
+            Department of Electronics and Communication Skills
+        </h2>
+        
+            <ul  id="mainfloat" style="list-style: none;">
+    
+                    <li>Contact Us!</li>
+        
+                    <p>MB: +91 84276-80001 <br/>
+                    Email: director@sbsstc.ac.in</p>
+                </ul>
+                <p>
+                        Copyright © 2019 - All Rights Reserve
+                    </p>
+    </footer>
+        <!-- Footer code End here -->
+
+      
+  </body>
+
+  </html>
