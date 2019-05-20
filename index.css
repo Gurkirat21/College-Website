@@ -155,6 +155,9 @@ nav {
 /*General moto styles*/
 
 .moto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin: 4em auto;
 }
 
@@ -174,18 +177,19 @@ nav {
 .article-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
+.article-container > h4 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
 .article-content {
-  margin-left: 0.5em;
-  border-right: #222831 dotted;
-}
-.article-content:first-child {
-  color: #222831;
-}
-.article-content:last-child {
-  color: #222831;
-  border: none;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 8px lightslategray;
+  margin: 0.5em;
 }
 
 /* moto styles ends here*/
@@ -210,70 +214,59 @@ nav {
 
 /* footer styles starts here*/
 
-      #subfoot ul
-          {
-            display: inline-block;
-           text-align: center;
-            list-style: none;
-           }
+#subfoot ul {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+}
 
-        #subfoot{
-            BAckground-color:#393e46;
-            min-height :12em;
-            display:flex;
-            color:white;
-            text-align:center;
-            padding:20px;
+#subfoot {
+  background-color: #393e46;
+  min-height: 12em;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-        }
+#subfoot ul li {
+  padding: 8px;
+  padding-right: 40px;
+}
+#subfoot h2 {
+  display: block;
+}
 
-        #subfoot ul li{
-            padding:8px;
-           padding-right:40px;
-            
+#mainfoot {
+  background-color: #222831;
+  min-height: 10em;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+#mainfoot h2 {
+  display: inline-block;
+  padding: 10px 40px;
+}
+#mainfloat {
+  float: right;
+  padding: 20px 30px;
+}
+#mainfoot p {
+  padding: 10px 40px;
+}
 
-        }
-        #subfoot h2{
-            display:block;
-            
-            
-        }
-
-
-        #mainfoot{
-            background-color: #222831;
-            min-height: 10em;
-            margin:0;
-            padding:20px;
-            color:white;
-            
-        }
-        #mainfoot h2 {
-            display: inline-block;
-            padding: 10px 40px;
-        
-        }
-        #mainfloat{
-            float:right;
-            padding: 20px 30px;
-
-        }
-        #mainfoot p {
-            
-            padding: 10px 40px;
-        }
-
-        #mainfloat li{
-            padding:10px;
-            background-color: aliceblue;
-            border:1px solid wheat;
-            border-radius:1em;
-            font-size: 120%;
-            text-align: center;
-            color:black;
-            
-        }
+#mainfloat li {
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid wheat;
+  border-radius: 1em;
+  font-size: 120%;
+  text-align: center;
+  color: black;
+}
 /* footer styles ends here*/
+
 /* Login.html styles */
 
 .login-wrapper {
@@ -302,8 +295,8 @@ form > * {
   font-size: 1.5em;
 }
 button {
-  padding: 0.4em .6em;
-  background-color: rgba(0,0,0,0);
+  padding: 0.4em 0.6em;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
   color: white;
   font-size: 1.3rem;
@@ -313,8 +306,8 @@ button:hover {
   border-color: #00adb5;
 }
 .login-section {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #393e46;
@@ -328,12 +321,50 @@ button:hover {
 /*Media query for responsive*/
 @media only screen and (min-width: 900px) {
   .login-wrapper {
-  flex-direction: row;
-}
+    flex-direction: row;
+  }
   .section {
     width: 50vw;
     height: 100vh;
   }
 }
 
+/*gallery styles starts here*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*About style are here*/
+.about-section {
+  max-width: 50vw;
+  margin: auto;
+}
+.about-header {
+  padding-left: 1em;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*About styles ends here*/
