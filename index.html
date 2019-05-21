@@ -1,152 +1,375 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="ECE Department of the SBSSTC " />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>College of ECE</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
-  </head>
-  <body>
-    <header class="topHeader" id="header">
-      <nav>
-        <!--We need a better logo but we will make do for right now-->
-        <!---
-        <img
-          src="http://sbsstc.ac.in/IMGs/Sketch.png"
-          alt="logo"
-          class="logo"
-        /> -->
-        <ul class="nav" id="mainNav">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./login.html">Attendance</a></li>
-          <li><a href="./faculty.html">Facaulty</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
-      </nav>
-      <h1>ECE Department of SBSSTC</h1>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to ECE Department of SBSSTC</title>
+    <link rel="icon" type="image/png" href="http://sbsstc.ac.in/IMGs/Sketch.png">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="home">
+<!-- Start Your Body Code From here -->
+<div class="wrapper">
+    <!-- header starts here -->
+    <header id="header" class="">
+        <!-- header -->
+        <div class="header-wrapper">
+            <div class="header-container">
+                <div>
+                    <div class="logo-name">
+                        <div class="logo"><a href="index.html" title=""><img src="http://sbsstc.ac.in/IMGs/Sketch.png"
+                                                                             alt="logo"></a></div>
+                        <div class="name">
+                            <a href="index.html" title="">
+                                <h5>Shaheed Bhagat Singh State Technical Campus</h5>
+                                <h5 class="primary-color">ECE Department</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-links">
+                    <a href="#" data-toggle="popover" title="Address"
+                       data-content="C/O Block A (2nd floor), SBSSTC , Ferozpur, NH-15"
+                       data-placement="bottom"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+
+                    <a href="#" data-toggle="popover" title="Phone No." data-content="+91-12-34567890"
+                       data-placement="bottom"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
+
+                    <a href="#" data-toggle="popover" title="Email" data-content="hod@ece.com"
+                       data-placement="bottom"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="navbar navbar-inverse navbar-custom" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="directors_message.html">Director's Message</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">B.Tech</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="btech_ece.html">ECE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">M.Tech</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="mtech_ece.html">ECE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="phd.html">Ph.D</a></li>
+                                    <li><a href="http://sbsstc.ac.in/PDFs/Academic_Calender_Jan_July_2019.pdf">Academic Calender</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="btech_admission.html">B.Tech</a></li>
+                                    <li><a href="mtech_admission.html">M.Tech</a></li>
+                                    <li><a href="phd_admission.html">Ph.D</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="faculty.html">Faculty</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="student_corner.html">Student's Corner</a></li>
+                                    <li><a href="#" target="_blank">SELCOME</a></li>
+                                    <li><a href="library.html">Library</a></li>
+                                    <li><a href="invited_talks.html">Invited Talks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-      <section>
-        <div class="artboard">
-          <div class="cards">
-            <div class="card p1"><a>Food</a></div>
-            <div class="card p2"><a>people</a></div>
-            <div class="card p3"><a>Nature</a></div>
-            <div class="card p4"><a>Travel</a></div>
-          </div>
-        </div>
-      </section>
-      <br />
-      <section class="informative-section">
-        <header>
-          <h4>About Us!</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
-            optio!t non iusto distinctio sit voluptate at.
-          </p>
-        </header>
-      </section>
-      <article class="moto">
-        <div class="article-container">
-          <h4>Announcement</h4>
-          <div class="article-content">
-            <h4>Lorem, ipsum.</h4>
-            <p>
-              &ldquo; Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              &rdquo;
-            </p>
-          </div>
-          <div class="article-content">
-            <h4>lorem</h4>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="article-content">
-            <h4>lorem</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div class="article-container">
-          <h4>Reports</h4>
-          <div class="article-content">
-            <h4>Lorem, ipsum.</h4>
-            <p>
-              &ldquo; Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              &rdquo;
-            </p>
-          </div>
-          <div class="article-content">
-            <h4>lorem</h4>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="article-content">
-            <h4>lorem</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div class="article-container">
-          <h4>News</h4>
-          <div class="article-content">
-            <h4>Lorem, ipsum.</h4>
-            <p>
-              &ldquo; Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              &rdquo;
-            </p>
-          </div>
-          <div class="article-content">
-            <h4>lorem</h4>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </div>
-      </article>
-    </main>
+    <!-- /header -->
 
-    <!-- Footer code Start -->
+    <!-- carousel -->
+    <div class="carousel-wrapper">
+        <div class="carousel" style="margin: 0 auto">
+            <div class="carousel-items">
+                <img height="400px" src="http://sbsstc.ac.in/im/12.jpg" alt="Faculty">
+                <div></div>
+            </div>
+            <div class="carousel-items">
+                <img height="400px" src="http://sbsstc.ac.in/im/03.jpg" alt="Gallery">
+                <div></div>
+            </div>
+            <div class="carousel-items">
+                <img height="400px" src="http://sbsstc.ac.in/im/16.jpg" alt="Students">
+                <div></div>
+            </div>
+            <div class="carousel-items">
+                <img height="400px" src="http://sbsstc.ac.in/im/06.jpg" alt="Talk">
+                <div></div>
+            </div>
+            <div class="carousel-items">
+                <img height="400px" src="http://sbsstc.ac.in/im/02.jpg" alt="Winners">
+                <div></div>
+            </div>
+        </div>
+    </div>
 
-    <footer id="subfoot" align="center">
-      <div style="width:50%;">
-        <h2>Menu</h2>
-        <ul>
-          <li>Home</li>
-          <li>Gallery</li>
-          <li>Attendance</li>
-          <li>Facaulty</li>
-          <li>About</li>
-        </ul>
-      </div>
+    <!-- Announcements, Events, News -->
+    <div class="widgets-wrapper">
+        <div class="widgets-container">
 
-      <div style="width:50%;">
-        <h2>Get Envolved</h2>
-        <ul>
-          <li>Registration</li>
-          <li>Log-in</li>
-          <li>History</li>
-          <li>Our Staff!</li>
-          <li>contact the developers of this site</li>
-        </ul>
-      </div>
+            <!-- Edit this section for important announcements.-->
+            <div class="alert alert-warning text-center">
+                Campus invites applications for <a class="alert-link" href="https://www.eduqfix.com/OnlineForms/sbsstcadmissionform/home">BTech, MTech
+                and PhD programs - Academic Year 2019-20</a>
+            </div>
+
+            <!-- Announcements -->
+            <div class="col-sm-4" id="announcements">
+                <div class='announcement-content '>
+                    <div class="widgets-title"><h2>Announcements</h2></div>
+                    <ul id="announcement-list">
+                        <li>
+                            For admissions to <b>M.Tech. and Ph.D. programs</b> visit:<br><a
+                                href="#" target="_blank"> PG-Admission-Portal.</a>
+                        </li>
+                        <li>
+                            For queries related to <b>B.Tech. programs </b>contact us at: &nbsp; &nbsp; <span
+                                style="font-size: 12px; font-weight: bold;color:Black"><a
+                                href="mailto:hod@ece.com">admissions@ece.com</a></span>
+                        </li>
+                        <li>
+                            Government of India Schemes for Students' Welfare <a
+                                href="#" target="_blank">Scheme 1 </a><a
+                                href="#" target="_blank">
+                            Scheme 2 </a>
+                        </li>
+                    </ul>
+                    <div id="announcement-list-pagination">
+                        <a id="announcement-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="announcement-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="col-sm-4" id="events">
+                <div class="events-content">
+                    <div class="widgets-title"><h2>Events</h2></div>
+                    <ul id="events-list">
+                        <li>
+                            <!-- Events -->
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                        <span>
+                                            <!-- Day -->
+                                            <div class="day">22</div>
+                                            <!-- Month Short Form (first three letters) -->
+                                            <div class="month">May</div>
+                                        </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Project Submission</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">23</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">May</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Resting day</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">24</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">May</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Back to Work day</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">26</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">May</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">4 Month from Republic day</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">1</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">Apr</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">April Fools day</div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div id="events-list-pagination">
+                        <a id="events-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="events-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4" id="news">
+                <div class='news-content '>
+                    <div class="widgets-title"><h2>News</h2></div>
+                    <ul id="news-list">
+                        <li>
+                            <a href="#" target="_blank">Mr. Jayush Chawla</a> and party just got to the project scene.
+
+                        </li>
+                    </ul>
+                    <div id="news-list-pagination">
+                        <a id="news-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="news-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <span class="logo"><img src="http://sbsstc.ac.in/IMGs/Sketch.png" alt=""></span>
+            <div class="row">
+                <div class="col-sm-4 address">
+                    <strong>Address : </strong>c/o Block A (2nd floor), Shaheed Bhagat Singh State Technical Campus,
+                    Ferozpur, NH-15
+                </div>
+                <div class="col-sm-4 links">
+                    <div>
+                        <a href="#news">News</a>
+                        <i class="seperator"></i>
+                        <a href="#announcements">Announcement</a>
+                        <i class="seperator"></i>
+                        <a href="#events">Events</a>
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                        
+                    </div>
+                    <div>
+                        <a href="btech_admission.html">Admission</a>
+                        <i class="seperator"></i>
+                        <a href="student_corner.html">Student</a>
+                        <i class="seperator"></i>
+                        <a href="faculty.html">Faculty</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 footer-social">
+                    <a href="#!"><i class="fa fa-facebook" aria-hidden="true" title="Official Facebook Page"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"
+                                                          title="Github Group"></i></a>
+                    <a href="#!"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn Profile"></i></a>
+                    <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true"
+                                             title="Official Twitter Account"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+</div>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.paginate.min.js "></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/434d359724.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function (e) {
+            $('[data-toggle="popover"]').not(this).popover('hide');
+        });
+    });
+</script>
 
-    <footer id="mainfoot">
-      <h2>
-        Department of Electronics and Communication Skills
-      </h2>
 
-      <ul id="mainfloat" style="list-style: none;">
-        <li>Contact Us!</li>
+</body>
 
-        <p>
-          MB: +91 84276-80001 <br />
-          Email: director@sbsstc.ac.in
-        </p>
-      </ul>
-      <p>
-        Copyright © 2019 - All Rights Reserve
-      </p>
-    </footer>
-    <!-- Footer code End here -->
-
-    <script src="index.js"></script>
-  </body>
 </html>
