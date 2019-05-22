@@ -44,29 +44,31 @@ db.serialize(function() {
 });
 
 // inserting data into the table
-/*var insertQuery = `INSERT INTO Attendance(id, StudentName, Present)
+var insertQuery = `INSERT INTO Attendance(id, StudentName, Present)
           VALUES(15110721, "Gurkirat Gill", "T"),
                 (15110723, "Jayush Chawla", "F"),
                 (15110737, "Sandeep Singh", "T")`;
 
 db.serialize(() => {
   // Queries scheduled here will be serialized.
-    db.run(insertQuery).each(`SELECT * FROM Attendance WHERE Id = 15110721`, (err, row) => {
-      if (err){
+  db.run(insertQuery).each(
+    `SELECT * FROM Attendance WHERE Id = 15110721`,
+    (err, row) => {
+      if (err) {
         throw err;
       }
       console.log(row);
       //let totalCount = row.length - 2;
-//      let presentCount = row.filter((value) => {
-//      return value === 'T';
-  //    }).length;
-    //  let absentCount = totalCount - presentCount;
-//      console.log(totalCount);
-  //    console.log(presentCount);
-    //  console.log(absentCount);      
-    })
+      //      let presentCount = row.filter((value) => {
+      //      return value === 'T';
+      //    }).length;
+      //  let absentCount = totalCount - presentCount;
+      //      console.log(totalCount);
+      //    console.log(presentCount);
+      //  console.log(absentCount);
+    }
+  );
 });
-*/
 
 // Querying the data from database
 
