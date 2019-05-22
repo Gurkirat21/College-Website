@@ -752,6 +752,72 @@ footer .address {
   }
 }
 
+/* Login.html styles */
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100vw;
+  height: 50vh;
+}
+.section h1 {
+  color: #eeeeee;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+.login-input {
+  display: block;
+}
+
+.login-form > * {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.login-button {
+  padding: 0.4em 0.6em;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-size: 1.3rem;
+}
+.login-button:hover {
+  color: #00adb5;
+  border-color: #00adb5;
+}
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #393e46;
+}
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00adb5;
+}
+.but {
+  list-style: none;
+}
+.butt {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
 @media (min-width: 600px) {
   .gallery-design .grid-sizer,
   .gallery-design .grid-item {
@@ -793,5 +859,12 @@ footer .address {
   .gallery-design .grid-sizer,
   .gallery-design .grid-item {
     width: 25%;
+  }
+  .login-wrapper {
+    flex-direction: row;
+  }
+  .section {
+    width: 50vw;
+    height: 100vh;
   }
 }
